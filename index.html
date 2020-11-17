@@ -1,0 +1,24 @@
+<script>
+function computerPlay() {
+    let choices = ['rock', 'paper', 'scissors']
+    //returns a random variable between two bounds
+    return choices[math.floor(math.random() * choices.length)]
+}
+
+function playRound(playerSelection, computerSelection) {
+    let playerScore = 0
+    
+    if ((playerSelection == 'rock' && computerSelection == 'scissors') ||
+             playerSelection == 'scissors' && computerSelection == 'paper') ||
+             playerSelection == 'paper' && computerSelection == 'rock'))
+        {
+             playerScore = 1
+             return 'You Win!' + playerSelection ' beats' + computerSelection
+             keepGoing = False
+        }
+        else {
+            return 'You Lose!' + computerSelection + ' beats' + playerSelection
+            keepGoing = False
+        }
+}
+</script>
